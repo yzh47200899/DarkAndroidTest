@@ -180,7 +180,7 @@ double test_detector(char *cfgfile, char *weightfile, char *filename, float thre
 // process imgfile to /sdcard/yolo/out
 jdouble
 JNICALL
-Java_com_example_darknetandroidvideo_utils_yoloUtils_YoloTest_testyolo(JNIEnv *env, jobject obj, jstring imgfile) {
+Java_com_example_darkandroidtest_yoloUtils_YoloTest_testyolo(JNIEnv *env, jobject obj, jstring imgfile) {
     double time;
     const char *imgfile_str = (*env)->GetStringUTFChars(env, imgfile, 0);
 
@@ -200,7 +200,7 @@ Java_com_example_darknetandroidvideo_utils_yoloUtils_YoloTest_testyolo(JNIEnv *e
 
 jdouble
 JNICALL
-Java_com_example_darknetandroidvideo_utils_yoloUtils_YoloTest_testBitmap(JNIEnv *env, jobject obj,
+Java_com_example_darkandroidtest_yoloUtils_YoloTest_testBitmap(JNIEnv *env, jobject obj,
                                                      jobject dst) {
     double time;
     //char *imgfile_str_v = (char *)imgfile_str;
@@ -268,7 +268,7 @@ double loadImage(char *filename, AndroidBitmapInfo dstInfo,
 
 jdouble
 JNICALL
-Java_com_example_darknetandroidvideo_utils_yoloUtils_YoloTest_testImageInfo(JNIEnv *env, jobject obj,
+Java_com_example_darkandroidtest_yoloUtils_YoloTest_testImageInfo(JNIEnv *env, jobject obj,
                                                         jobject dst, jstring imgfile) {
     const char *imgfile_str = (*env)->GetStringUTFChars(env, imgfile, 0);
 
